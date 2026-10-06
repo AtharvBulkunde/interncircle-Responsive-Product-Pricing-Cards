@@ -1,0 +1,199 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern responsive SaaS pricing cards">
+    <title>NovaFlow — Pricing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="pricing-section">
+
+        <header class="pricing-header">
+            <span class="eyebrow">SIMPLE PRICING</span>
+
+            <h1>Choose the plan that<br>
+                <span>fits your workflow.</span>
+            </h1>
+
+            <p>
+                Powerful tools for individuals, teams, and growing businesses.
+                Upgrade whenever you need.
+            </p>
+
+            <!-- Billing Toggle -->
+            <div class="billing-wrapper">
+                <span id="monthlyLabel" class="active-label">Monthly</span>
+
+                <label class="toggle">
+                    <input type="checkbox" id="billingToggle">
+                    <span class="slider"></span>
+                </label>
+
+                <span id="yearlyLabel">Yearly</span>
+
+                <span class="save-badge">SAVE 20%</span>
+            </div>
+        </header>
+
+
+        <!-- Pricing Cards -->
+        <section class="pricing-grid">
+
+            <!-- Starter -->
+            <article class="pricing-card">
+
+                <div class="card-top">
+                    <div class="icon">✦</div>
+
+                    <h2>Starter</h2>
+
+                    <p class="description">
+                        Everything you need to get started.
+                    </p>
+
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount"
+                              data-monthly="9"
+                              data-yearly="7">9</span>
+                        <span class="period">/month</span>
+                    </div>
+
+                    <p class="billing-text">Billed monthly</p>
+
+                    <button class="choose-btn">
+                        Get Started
+                    </button>
+                </div>
+
+                <div class="features">
+                    <h3>What's included</h3>
+
+                    <ul>
+                        <li>✓ 5 projects</li>
+                        <li>✓ 10 GB storage</li>
+                        <li>✓ Basic analytics</li>
+                        <li>✓ Email support</li>
+                        <li>✓ Community access</li>
+                    </ul>
+                </div>
+
+            </article>
+
+
+            <!-- Professional -->
+            <article class="pricing-card popular">
+
+                <div class="ribbon">
+                    MOST POPULAR
+                </div>
+
+                <div class="card-top">
+                    <div class="icon purple">◆</div>
+
+                    <h2>Professional</h2>
+
+                    <p class="description">
+                        Advanced features for professionals.
+                    </p>
+
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount"
+                              data-monthly="24"
+                              data-yearly="19">24</span>
+                        <span class="period">/month</span>
+                    </div>
+
+                    <p class="billing-text">Billed monthly</p>
+
+                    <button class="choose-btn primary">
+                        Start Free Trial
+                    </button>
+                </div>
+
+                <div class="features">
+                    <h3>Everything in Starter, plus</h3>
+
+                    <ul>
+                        <li>✓ Unlimited projects</li>
+                        <li>✓ 100 GB storage</li>
+                        <li>✓ Advanced analytics</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Team collaboration</li>
+                    </ul>
+                </div>
+
+            </article>
+
+
+            <!-- Business -->
+            <article class="pricing-card best-value">
+
+                <div class="ribbon green">
+                    BEST VALUE
+                </div>
+
+                <div class="card-top">
+                    <div class="icon green-icon">◈</div>
+
+                    <h2>Business</h2>
+
+                    <p class="description">
+                        Complete solution for growing teams.
+                    </p>
+
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount"
+                              data-monthly="49"
+                              data-yearly="39">49</span>
+                        <span class="period">/month</span>
+                    </div>
+
+                    <p class="billing-text">Billed monthly</p>
+
+                    <button class="choose-btn">
+                        Contact Sales
+                    </button>
+                </div>
+
+                <div class="features">
+                    <h3>Everything in Professional, plus</h3>
+
+                    <ul>
+                        <li>✓ Unlimited storage</li>
+                        <li>✓ Custom integrations</li>
+                        <li>✓ Advanced security</li>
+                        <li>✓ Dedicated support</li>
+                        <li>✓ Admin controls</li>
+                    </ul>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <footer class="pricing-footer">
+            <span>✓ No credit card required</span>
+            <span>✓ Cancel anytime</span>
+            <span>✓ 14-day free trial</span>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
